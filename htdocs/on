@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<grammar>
+  <entry name="DirPrepObj_0">
+    <family>DirPrepObj</family>
+    <trace>
+      <class>DirPrepObj</class>
+    </trace>
+    <frame >
+      <fs coref="@Frame1">
+        <ctype>
+          <type val="bounded-translocation"/>
+        </ctype>
+        <f name="goal">
+          <sym varname="@V2"/>
+        </f>
+        <f name="path">
+          <sym varname="@V3"/>
+        </f>
+      </fs>
+    </frame>
+    <tree id="DirPrepObj_0">
+      <node type="std" name="XMGVAR_VP1">
+        <narg>
+          <fs coref="@AVM4">
+            <f name="bot">
+              <fs coref="@AVM5">
+                <f name="path">
+                  <sym varname="@V3"/>
+                </f>
+              </fs>
+            </f>
+            <f name="cat">
+              <sym value="vp"/>
+            </f>
+          </fs>
+        </narg>
+        <node type="std" name="XMGVAR_VP2">
+          <narg>
+            <fs coref="@AVM6">
+              <f name="bot">
+                <fs coref="@AVM7">
+                  <f name="path">
+                    <sym varname="@V3"/>
+                  </f>
+                </fs>
+              </f>
+              <f name="cat">
+                <sym value="vp"/>
+              </f>
+            </fs>
+          </narg>
+          <node type="anchor" name="XMGVAR_V">
+            <narg>
+              <fs coref="@AVM8">
+                <f name="cat">
+                  <sym value="v"/>
+                </f>
+              </fs>
+            </narg>
+          </node>
+        </node>
+        <node type="subst" name="XMGVAR_PP">
+          <narg>
+            <fs coref="@AVM9">
+              <f name="cat">
+                <sym value="pp"/>
+              </f>
+              <f name="top">
+                <fs coref="@AVM10">
+                  <f name="e">
+                    <fs coref="@Frame1"/>
+                  </f>
+                  <f name="i">
+                    <sym varname="@V2"/>
+                  </f>
+                </fs>
+              </f>
+            </fs>
+          </narg>
+        </node>
+      </node>
+    </tree>
+    <interface>
+      <fs>
+        <f name="e">
+          <fs coref="@Frame1"/>
+        </f>
+      </fs>
+    </interface>
+  </entry>
+</grammar>

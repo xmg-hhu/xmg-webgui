@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<grammar>
+  <entry name="ment_0">
+    <family>ment</family>
+    <trace>
+      <class>amuse</class>
+      <class>ment</class>
+    </trace>
+    <frame >
+      <fs coref="@Frame1">
+        <ctype>
+          <type val="derived-lexeme"/>
+          <type val="lexeme"/>
+          <type val="ment-lexeme"/>
+        </ctype>
+        <f name="m-base">
+          <fs coref="@Frame2">
+            <ctype>
+              <type val="event"/>
+              <type val="eventuality"/>
+            </ctype>
+            <f name="sem">
+              <fs coref="@Frame3">
+                <ctype>
+                  <type val="event"/>
+                  <type val="eventuality"/>
+                  <type val="psych_causation"/>
+                </ctype>
+                <f name="cause">
+                  <fs coref="@Frame4">
+                    <ctype>
+                      <type val="activity"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="actor">
+                      <fs coref="@Frame5">
+                        <ctype>
+                          <type val="entity"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame6">
+                            <ctype>
+                              <type val="animacy"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="undergoer">
+                      <fs coref="@Frame7">
+                        <ctype>
+                          <type val="entity"/>
+                          <type val="experiencer"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame8">
+                            <ctype>
+                              <type val="animacy"/>
+                              <type val="animate"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="effect">
+                  <fs coref="@Frame9">
+                    <ctype>
+                      <type val="change_of_psych_state"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="initial-state">
+                      <fs coref="@Frame10">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="initial_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="result-state">
+                      <fs coref="@Frame11">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="result_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="experiencer">
+                  <fs coref="@Frame7"/>
+                </f>
+                <f name="stimulus">
+                  <fs coref="@Frame5"/>
+                </f>
+              </fs>
+            </f>
+          </fs>
+        </f>
+        <f name="ref">
+          <fs coref="@Frame11"/>
+        </f>
+      </fs>
+    </frame>
+    <tree />
+    <interface>
+      <fs>
+      </fs>
+    </interface>
+  </entry>
+  <entry name="ment_1">
+    <family>ment</family>
+    <trace>
+      <class>amuse</class>
+      <class>ment</class>
+    </trace>
+    <frame >
+      <fs coref="@Frame1">
+        <ctype>
+          <type val="derived-lexeme"/>
+          <type val="lexeme"/>
+          <type val="ment-lexeme"/>
+        </ctype>
+        <f name="m-base">
+          <fs coref="@Frame2">
+            <ctype>
+              <type val="event"/>
+              <type val="eventuality"/>
+            </ctype>
+            <f name="sem">
+              <fs coref="@Frame3">
+                <ctype>
+                  <type val="event"/>
+                  <type val="eventuality"/>
+                  <type val="psych_causation"/>
+                </ctype>
+                <f name="cause">
+                  <fs coref="@Frame4">
+                    <ctype>
+                      <type val="activity"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="actor">
+                      <fs coref="@Frame5">
+                        <ctype>
+                          <type val="entity"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame6">
+                            <ctype>
+                              <type val="animacy"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="undergoer">
+                      <fs coref="@Frame7">
+                        <ctype>
+                          <type val="entity"/>
+                          <type val="experiencer"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame8">
+                            <ctype>
+                              <type val="animacy"/>
+                              <type val="animate"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="effect">
+                  <fs coref="@Frame9">
+                    <ctype>
+                      <type val="change_of_psych_state"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="initial-state">
+                      <fs coref="@Frame10">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="initial_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="result-state">
+                      <fs coref="@Frame11">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="result_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="experiencer">
+                  <fs coref="@Frame7"/>
+                </f>
+                <f name="stimulus">
+                  <fs coref="@Frame5"/>
+                </f>
+              </fs>
+            </f>
+          </fs>
+        </f>
+        <f name="ref">
+          <fs coref="@Frame3"/>
+        </f>
+      </fs>
+    </frame>
+    <tree />
+    <interface>
+      <fs>
+      </fs>
+    </interface>
+  </entry>
+  <entry name="ment_2">
+    <family>ment</family>
+    <trace>
+      <class>amuse</class>
+      <class>ment</class>
+    </trace>
+    <frame >
+      <fs coref="@Frame1">
+        <ctype>
+          <type val="derived-lexeme"/>
+          <type val="lexeme"/>
+          <type val="ment-lexeme"/>
+        </ctype>
+        <f name="m-base">
+          <fs coref="@Frame2">
+            <ctype>
+              <type val="event"/>
+              <type val="eventuality"/>
+            </ctype>
+            <f name="sem">
+              <fs coref="@Frame3">
+                <ctype>
+                  <type val="event"/>
+                  <type val="eventuality"/>
+                  <type val="psych_causation"/>
+                </ctype>
+                <f name="cause">
+                  <fs coref="@Frame4">
+                    <ctype>
+                      <type val="activity"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="actor">
+                      <fs coref="@Frame5">
+                        <ctype>
+                          <type val="entity"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame6">
+                            <ctype>
+                              <type val="animacy"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="undergoer">
+                      <fs coref="@Frame7">
+                        <ctype>
+                          <type val="entity"/>
+                          <type val="experiencer"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame8">
+                            <ctype>
+                              <type val="animacy"/>
+                              <type val="animate"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="effect">
+                  <fs coref="@Frame9">
+                    <ctype>
+                      <type val="change_of_psych_state"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="initial-state">
+                      <fs coref="@Frame10">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="initial_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="result-state">
+                      <fs coref="@Frame11">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="result_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="experiencer">
+                  <fs coref="@Frame7"/>
+                </f>
+                <f name="stimulus">
+                  <fs coref="@Frame5"/>
+                </f>
+              </fs>
+            </f>
+          </fs>
+        </f>
+        <f name="ref">
+          <fs coref="@Frame4"/>
+        </f>
+      </fs>
+    </frame>
+    <tree />
+    <interface>
+      <fs>
+      </fs>
+    </interface>
+  </entry>
+  <entry name="ment_3">
+    <family>ment</family>
+    <trace>
+      <class>amuse</class>
+      <class>ment</class>
+    </trace>
+    <frame >
+      <fs coref="@Frame1">
+        <ctype>
+          <type val="derived-lexeme"/>
+          <type val="lexeme"/>
+          <type val="ment-lexeme"/>
+        </ctype>
+        <f name="m-base">
+          <fs coref="@Frame2">
+            <ctype>
+              <type val="event"/>
+              <type val="eventuality"/>
+            </ctype>
+            <f name="sem">
+              <fs coref="@Frame3">
+                <ctype>
+                  <type val="event"/>
+                  <type val="eventuality"/>
+                  <type val="psych_causation"/>
+                </ctype>
+                <f name="cause">
+                  <fs coref="@Frame4">
+                    <ctype>
+                      <type val="activity"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="actor">
+                      <fs coref="@Frame5">
+                        <ctype>
+                          <type val="entity"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame6">
+                            <ctype>
+                              <type val="animacy"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="undergoer">
+                      <fs coref="@Frame7">
+                        <ctype>
+                          <type val="entity"/>
+                          <type val="experiencer"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame8">
+                            <ctype>
+                              <type val="animacy"/>
+                              <type val="animate"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="effect">
+                  <fs coref="@Frame9">
+                    <ctype>
+                      <type val="change_of_psych_state"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="initial-state">
+                      <fs coref="@Frame10">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="initial_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="result-state">
+                      <fs coref="@Frame11">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="result_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="experiencer">
+                  <fs coref="@Frame7"/>
+                </f>
+                <f name="stimulus">
+                  <fs coref="@Frame5"/>
+                </f>
+              </fs>
+            </f>
+          </fs>
+        </f>
+        <f name="ref">
+          <fs coref="@Frame9"/>
+        </f>
+      </fs>
+    </frame>
+    <tree />
+    <interface>
+      <fs>
+      </fs>
+    </interface>
+  </entry>
+  <entry name="ment_4">
+    <family>ment</family>
+    <trace>
+      <class>amuse</class>
+      <class>ment</class>
+    </trace>
+    <frame >
+      <fs coref="@Frame1">
+        <ctype>
+          <type val="derived-lexeme"/>
+          <type val="lexeme"/>
+          <type val="ment-lexeme"/>
+        </ctype>
+        <f name="m-base">
+          <fs coref="@Frame2">
+            <ctype>
+              <type val="event"/>
+              <type val="eventuality"/>
+            </ctype>
+            <f name="sem">
+              <fs coref="@Frame3">
+                <ctype>
+                  <type val="event"/>
+                  <type val="eventuality"/>
+                  <type val="psych_causation"/>
+                </ctype>
+                <f name="cause">
+                  <fs coref="@Frame4">
+                    <ctype>
+                      <type val="activity"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="actor">
+                      <fs coref="@Frame5">
+                        <ctype>
+                          <type val="entity"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame6">
+                            <ctype>
+                              <type val="animacy"/>
+                              <type val="inanimate"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="undergoer">
+                      <fs coref="@Frame7">
+                        <ctype>
+                          <type val="entity"/>
+                          <type val="experiencer"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame8">
+                            <ctype>
+                              <type val="animacy"/>
+                              <type val="animate"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="effect">
+                  <fs coref="@Frame9">
+                    <ctype>
+                      <type val="change_of_psych_state"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="initial-state">
+                      <fs coref="@Frame10">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="initial_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="result-state">
+                      <fs coref="@Frame11">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="result_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="experiencer">
+                  <fs coref="@Frame7"/>
+                </f>
+                <f name="stimulus">
+                  <fs coref="@Frame5"/>
+                </f>
+              </fs>
+            </f>
+          </fs>
+        </f>
+        <f name="ref">
+          <fs coref="@Frame5"/>
+        </f>
+      </fs>
+    </frame>
+    <tree />
+    <interface>
+      <fs>
+      </fs>
+    </interface>
+  </entry>
+  <entry name="ment_5">
+    <family>ment</family>
+    <trace>
+      <class>amuse</class>
+      <class>ment</class>
+    </trace>
+    <frame >
+      <fs coref="@Frame1">
+        <ctype>
+          <type val="derived-lexeme"/>
+          <type val="lexeme"/>
+          <type val="ment-lexeme"/>
+        </ctype>
+        <f name="m-base">
+          <fs coref="@Frame2">
+            <ctype>
+              <type val="event"/>
+              <type val="eventuality"/>
+            </ctype>
+            <f name="sem">
+              <fs coref="@Frame3">
+                <ctype>
+                  <type val="event"/>
+                  <type val="eventuality"/>
+                  <type val="psych_causation"/>
+                </ctype>
+                <f name="cause">
+                  <fs coref="@Frame4">
+                    <ctype>
+                      <type val="activity"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="actor">
+                      <fs coref="@Frame5">
+                        <ctype>
+                          <type val="entity"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame6">
+                            <ctype>
+                              <type val="animacy"/>
+                              <type val="inanimate"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="undergoer">
+                      <fs coref="@Frame7">
+                        <ctype>
+                          <type val="entity"/>
+                          <type val="experiencer"/>
+                        </ctype>
+                        <f name="animacy">
+                          <fs coref="@Frame8">
+                            <ctype>
+                              <type val="animacy"/>
+                              <type val="animate"/>
+                            </ctype>
+                          </fs>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="effect">
+                  <fs coref="@Frame9">
+                    <ctype>
+                      <type val="change_of_psych_state"/>
+                      <type val="event"/>
+                      <type val="eventuality"/>
+                    </ctype>
+                    <f name="initial-state">
+                      <fs coref="@Frame10">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="initial_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                    <f name="result-state">
+                      <fs coref="@Frame11">
+                        <ctype>
+                          <type val="eventuality"/>
+                          <type val="result_state"/>
+                          <type val="state"/>
+                        </ctype>
+                        <f name="experiencer">
+                          <fs coref="@Frame7"/>
+                        </f>
+                      </fs>
+                    </f>
+                  </fs>
+                </f>
+                <f name="experiencer">
+                  <fs coref="@Frame7"/>
+                </f>
+                <f name="stimulus">
+                  <fs coref="@Frame5"/>
+                </f>
+              </fs>
+            </f>
+          </fs>
+        </f>
+        <f name="ref">
+          <fs coref="@Frame5"/>
+        </f>
+      </fs>
+    </frame>
+    <tree />
+    <interface>
+      <fs>
+      </fs>
+    </interface>
+  </entry>
+</grammar>
