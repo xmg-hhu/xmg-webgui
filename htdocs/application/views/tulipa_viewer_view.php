@@ -70,27 +70,7 @@ echo '<input id="file_display" type="hidden" source='.$filename_wo_dir_with_quot
 <!--<input id="file_display" type="hidden"  source="134-99-174-20_1597666467_out.xml" value="tulipa/parseresults/134-99-174-20_1597666467_out.xml" /> -->
 <!--<input id ="file_display" type="hidden" source=verbs_frames.xml value=uploads/134.99_.174_.20_verbs_frames_.xml>-->
 <body>
-<!--<nav class="navbar navbar-inverse">-->
-<!--    <div class="container-fluid">-->
-<!--        <div class="navbar-header">-->
-<!--            <a class="navbar-brand" href=".">XMG WebGUI</a>-->
-<!--        </div>-->
-<!--        <div-->
-<!--&lt;!&ndash;        <ul class="nav navbar-nav">&ndash;&gt;-->
-<!--&lt;!&ndash;            <li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <a href="index.php/upload/workbench																		 ">Workbench</a>&ndash;&gt;-->
-<!--&lt;!&ndash;            </li>&ndash;&gt;-->
-<!--&lt;!&ndash;            <li class="active"><a href="index.php/upload/upload_viewer">Viewer</a></li>&ndash;&gt;-->
-<!--&lt;!&ndash;            <li><a href="https://github.com/spetitjean/XMG-2/wiki" target="_blank">Documentation</a></li>&ndash;&gt;-->
-<!--&lt;!&ndash;            <li><a href="https://github.com/xmg-hhu/xmg-webgui/issues" target="_blank">Issue tracker</a></li>&ndash;&gt;-->
-
-<!--&lt;!&ndash;            <li><a href="https://github.com/spetitjean/TuLiPA-frames">Parser</a></li>&ndash;&gt;-->
-<!--&lt;!&ndash;            <li><a href="index.php/upload/xtag">XTAG</a></li>&ndash;&gt;-->
-<!--&lt;!&ndash;            <li><a href="index.php/upload/resources">Resources</a></li>&ndash;&gt;-->
-<!--&lt;!&ndash;        </ul>&ndash;&gt;-->
-<!--    </div>-->
-<!--    </div>-->
-<!--</nav>-->
+<?php include 'navbar_simple.php';?>
 </br>
 <h1>Parse results for sentence &lsquo;<?php echo $_POST['sent']; ?>&rsquo;</h1>
 <?php ?>

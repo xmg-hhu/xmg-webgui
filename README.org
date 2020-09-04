@@ -1,3 +1,0 @@
-* xmg-webgui
-
-This repository serves as an issue tracker for the [[http://xmg.phil.hhu.de][XMG-WebGUI]].

@@ -14,7 +14,7 @@
 
 						 <base href="<?#php echo base_url(); ?>" /> --> 
 
-				<base href=""/>
+				<base href="http://xmg.phil.hhu.de/"/>
 
 
 
@@ -38,45 +38,7 @@
 
 		<body>
 
-
-
-        <nav class="navbar navbar-inverse">
-
-            <div class="container-fluid">
-
-                <div class="navbar-header">
-
-                    <a class="navbar-brand" href="http://xmg.phil.hhu.de">XMG WebGUI</a>
-
-                </div>
-
-                <div>
-
-										<ul class="nav navbar-nav">
-
-												<li><a href="http://xmg.phil.hhu.de/index.php/upload/workbench">Workbench</a></li>
-
-												<li><a href="upload_viewer.html">Viewer</a></li>
-
-												<li><a href="https://github.com/spetitjean/XMG-2/wiki" target="_blank">Documentation</a></li>
-
-												<li><a href="https://github.com/xmg-hhu/xmg-webgui/issues" target="_blank">Issue tracker</a></li>
-
-												<li class="active"><a href="index.html">Parser</a></li>
-
-												<li><a href="http://xmg.phil.hhu.de/index.php/upload/xtag">XTAG</a></li>
-
-										       <li><a href="http://xmg.phil.hhu.de/index.php/upload/resources">Resources</a></li>																													
-
-										</ul>
-
-                </div>
-
-            </div>
-
-        </nav>
-
-
+<?php include 'navbar_simple.php';?>
 
 				<h1>&nbsp;&nbsp;TuLiPA parser</h1>
 

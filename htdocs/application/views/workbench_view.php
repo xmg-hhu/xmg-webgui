@@ -113,52 +113,7 @@
   
   <body>
     
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-	<div class="navbar-header">
-	  <a class="navbar-brand" href=".">XMG WebGUI</a>
-	</div>
-	<div>
-	  <ul class="nav navbar-nav">
-	    <li class="active"><a href="index.php/upload/workbench<?php
-					if ($grammarfile != "") {
-							      echo('?file=');
-							      echo(basename($grammarfile,'.'.pathinfo($grammarfile)['extension']).'mg');
-							      }
-							      if ($compiler != "") {
- 										 echo('&compiler=');
-										 echo($compiler);
-										 }
-										 ?>">Workbench</a></li>
-	    <li><a href="index.php/upload/viewer<?php
-			 if ($grammarfile != "") {
-					       echo('?file=');
-					       echo(basename($grammarfile,'.'.pathinfo($grammarfile)['extension']).'.xml');
-					       }
-					       if ($compiler != "") {
- 								  echo('&compiler=');
-								  echo($compiler);
-								  }
-								  ?>">Viewer</a></li>
-	    <li><a href="https://github.com/spetitjean/XMG-2/wiki" target="_blank">Documentation</a></li>
-	    <li><a href="https://github.com/xmg-hhu/xmg-webgui/issues" target="_blank">Issue tracker</a></li>
-	    
-	    <li><a href="https://github.com/spetitjean/TuLiPA-frames">Parser</a></li>
-	    <li><a href="index.php/upload/xtag<?php
-			 if ($grammarfile != "") {
-					       echo('?file=');
-					       echo(basename($grammarfile,'.'.pathinfo($grammarfile)['extension']).'.xml');
-					       }
-					       if ($compiler != "") {
- 								  echo('&compiler=');
-								  echo($compiler);
-								  }
-								  ?>">XTAG</a></li>
-	    <li><a href="index.php/upload/resources">Resources</a></li>
-	  </ul>
-	</div>
-      </div>
-    </nav>
+    <?php include 'navbar.php'; ?>
     
     <a href="index.php/upload/upload_grammar<?php
 	     if ($grammarfile != "") {
