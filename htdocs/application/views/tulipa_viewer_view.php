@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include 'navbar_simple.php';?>
 <html style="">
 <head>
     <title>Viewer | XMG WebGUI</title>
@@ -70,7 +71,7 @@ echo '<input id="file_display" type="hidden" source='.$filename_wo_dir_with_quot
 <!--<input id="file_display" type="hidden"  source="134-99-174-20_1597666467_out.xml" value="tulipa/parseresults/134-99-174-20_1597666467_out.xml" /> -->
 <!--<input id ="file_display" type="hidden" source=verbs_frames.xml value=uploads/134.99_.174_.20_verbs_frames_.xml>-->
 <body>
-<?php include 'navbar_simple.php';?>
+  <?php display_navbar_simple('parser'); ?>
 </br>
 <h1>Parse results for sentence &lsquo;<?php echo $_POST['sent']; ?>&rsquo;</h1>
 <?php ?>
@@ -128,13 +129,7 @@ echo '<input id="file_display" type="hidden" source='.$filename_wo_dir_with_quot
 <br>
 <br>
 <br>
-<div class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-            <span class="navbar-text">
-    								<a href="http://www.sfb991.uni-duesseldorf.de/">CRC 991, Düsseldorf, 2017</a>
-            </span>
-    </div>
-</div>
+<?php display_bottom_navbar('home');?>
 <ul>
 
 </ul>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include 'navbar_simple.php';?>
 <html style="">
     <head>
 				<title>XMG WebGUI</title>
@@ -51,7 +52,7 @@
         </style>
     </head>
 		<body>
-			<?php include 'navbar_simple.php';?>
+                        <?php display_navbar_simple('home');?>
 				<div class="container">
 						<div class="jumbotron">
 								<h2>eXtensible MetaGrammar (XMG)</h2>
@@ -79,12 +80,5 @@
 						</div>
 
 				</div>
-
-				<div class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container">
-                <span class="navbar-text">
-										<a href="http://www.sfb991.uni-duesseldorf.de/">CRC 991, Düsseldorf, 2017</a>
-                </span>
-            </div>
-        </div>
+<?php display_bottom_navbar('home') ?>
 		</body>

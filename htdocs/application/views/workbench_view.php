@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php include 'navbar_simple.php'; ?>
+<?php include 'navbar.php'; ?>
 <html style="">
   <head>
     <title>Workbench | XMG WebGUI</title>    
@@ -113,7 +115,7 @@
   
   <body>
     
-    <?php include 'navbar.php'; ?>
+    <?php display_navbar('workbench', $grammarfile, $compiler); ?>
     
     <a href="index.php/upload/upload_grammar<?php
 	     if ($grammarfile != "") {
@@ -254,13 +256,14 @@
     
     <br>
     
-    <div class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
-	<span class="navbar-text">
-	  <a href="http://www.sfb991.uni-duesseldorf.de/">CRC 991, Düsseldorf, 2017</a>
-	</span>
-      </div>
-    </div>
+    <?php display_bottom_navbar('workbench') ?>
+    <!-- <div class="navbar navbar-default navbar-fixed-bottom"> -->
+    <!--   <div class="container"> -->
+    <!-- 	<span class="navbar-text"> -->
+    <!-- 	  <a href="http://www.sfb991.uni-duesseldorf.de/">CRC 991, Düsseldorf, 2017</a> -->
+    <!-- 	</span> -->
+    <!--   </div> -->
+    <!-- </div> -->
     
     
     <!-- forward compiler selection to saveCompileForm -->

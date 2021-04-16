@@ -1,3 +1,5 @@
+<?php include 'navbar_simple.php';?>
+<?php include 'navbar.php';?>
 <html>
   <head>
     <title>Metagrammar upload | XMG WebGUI</title>
@@ -57,7 +59,7 @@
   </head>
   
   <body>
-	<?php include 'navbar.php';?>
+	<?php display_navbar('workbench', $grammarfile, $compiler);?>
     
     <h1>&nbsp;&nbsp;eXtensible MetaGrammar NG (XMG-NG) Compiler</h1>
     <div class="well">
@@ -87,14 +89,14 @@
     
     <br/>
     
-    <div class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
-	<span class="navbar-text">
-	  <a href="http://www.sfb991.uni-duesseldorf.de/">CRC 991, D&uuml;sseldorf, 2017</a>
-	</span>
-      </div>
-    </div>
-    
+    <!-- <div class="navbar navbar-default navbar-fixed-bottom"> -->
+    <!--   <div class="container"> -->
+    <!-- 	<span class="navbar-text"> -->
+    <!-- 	  <a href="http://www.sfb991.uni-duesseldorf.de/">CRC 991, D&uuml;sseldorf, 2017</a> -->
+    <!-- 	</span> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    <?php display_bottom_navbar('workbench'); ?>
     
   </body>
 </html>

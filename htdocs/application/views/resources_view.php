@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include 'navbar_simple.php';?>
 <html style="">
   <head>
     <title>Resources | XMG WebGUI</title>
@@ -65,11 +66,11 @@
   
   <body>
     
-    <?php include 'navbar_simple.php';?>
+    <?php display_navbar_simple('resources');?>
     
     <div class="container">
       <div class="jumbotron">
-	<h2>Resources (under construction)</h2>
+	<h2>Resources</h2>
 	This page gathers links to existing metagrammars which were developed using XMG. These resources are sorted by the type of XMG compiler they use, you can compile them with a local installation by using the corresponding compiler, or select the right item in the selection menu of the <a href="index.php/upload/workbench">Workbench</a>. 
 	<br/><br/>	
 	If you developed or are developing a resource using XMG and would like to see it listed on this page, or if you would like any of the information on this page to be modified or extended, please contact us.
