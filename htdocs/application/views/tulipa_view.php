@@ -45,7 +45,7 @@
 
 						 
 
-      <form action="tulipa_viewer" method="post" accept-charset="utf-8" enctype="multipart/form-data" target="_blank">
+      <form action="index.php/upload/tulipa_viewer" method="post" accept-charset="utf-8" enctype="multipart/form-data" target="_blank">
 
 							
 
