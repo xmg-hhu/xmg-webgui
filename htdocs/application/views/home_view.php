@@ -56,7 +56,6 @@
     <div class="container">
       <div class="jumbotron">
 	<h2>eXtensible MetaGrammar (XMG)</h2>
-	<?php echo base_url(); ?>
 	The XMG system corresponds to what is usually called a “metagrammar compiler”. More precisely it is a tool for designing large scaled grammars for natural language. Provided a compact representation of grammatical information, XMG combines elementary fragments of information to produce a fully redundant strongly lexicalised grammar. It is worth noticing that by XMG, we refer to both a formalism allowing one to describe the linguistic information contained in a grammar, a device computing grammar rules from a description based on this formalism.
 	<br/><br/>
 	The original XMG website can be found <a href="https://sourcesup.renater.fr/xmg">here</a>. The latest version, <a href="https://github.com/spetitjean/XMG-2">XMG-2</a>, and its <a href="https://github.com/spetitjean/XMG-2/wiki">documentation</a>, are available on GitHub.
@@ -64,7 +63,7 @@
 	<h2>Aim of the XMG WebGUI</h2>
 	The XMG WebGUI makes available a compiler and viewer for XMG. No local installation of the XMG software is necessary. Just upload your code and let our server do the job.
 	<br/><br/>
-	The XMG WebGUI is also intended to make accessible already completed grammars in the XMG format. To begin with, we have converted the <a href="http://www.cis.upenn.edu/~xtag/">XTAG grammar</a> of English. Take a look <a href="xtag">here</a>.
+	The XMG WebGUI is also intended to make accessible already completed grammars in the XMG format. To begin with, we have converted the <a href="http://www.cis.upenn.edu/~xtag/">XTAG grammar</a> of English. Take a look <a href="index.php/upload/xtag">here</a>.
 	
 	<h2>Team</h2>
 	<ul>
