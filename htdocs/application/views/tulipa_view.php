@@ -7,11 +7,9 @@
 				
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <!-- Does not work for some reason
+    <base href="<?php echo base_url(); ?>" /> 
 
-	 <base href="<?#php echo base_url(); ?>" /> --> 
-
-    <base href="http://xmg.phil.hhu.de/"/>
+    <!-- <base href="http://xmg.phil.hhu.de/"/> -->
 
 
 

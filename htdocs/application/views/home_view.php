@@ -4,8 +4,8 @@
   <head>
     <title>XMG WebGUI</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <!-- <base href="<?#php echo base_url(); ?>" /> -->
-    <base href="http://xmg.phil.hhu.de/"/>
+    <base href="<?php echo base_url(); ?>" />
+    <!-- <base href="http://xmg.phil.hhu.de/"/> -->
     
     <script src="js/d3.v3.min.js"></script>
     
@@ -56,6 +56,7 @@
     <div class="container">
       <div class="jumbotron">
 	<h2>eXtensible MetaGrammar (XMG)</h2>
+	<?php echo base_url(); ?>
 	The XMG system corresponds to what is usually called a “metagrammar compiler”. More precisely it is a tool for designing large scaled grammars for natural language. Provided a compact representation of grammatical information, XMG combines elementary fragments of information to produce a fully redundant strongly lexicalised grammar. It is worth noticing that by XMG, we refer to both a formalism allowing one to describe the linguistic information contained in a grammar, a device computing grammar rules from a description based on this formalism.
 	<br/><br/>
 	The original XMG website can be found <a href="https://sourcesup.renater.fr/xmg">here</a>. The latest version, <a href="https://github.com/spetitjean/XMG-2">XMG-2</a>, and its <a href="https://github.com/spetitjean/XMG-2/wiki">documentation</a>, are available on GitHub.

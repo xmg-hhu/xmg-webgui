@@ -5,7 +5,7 @@
     <title>Viewer | XMG WebGUI</title>
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <!-- <base href="<?#php echo base_url(); ?>" /> -->
+    <base href="<?php echo base_url(); ?>" />
     <!-- <base href="http://xmg.phil.hhu.de/"/> -->
     <!--                <base href="http://localhost:3000"/>-->
 
