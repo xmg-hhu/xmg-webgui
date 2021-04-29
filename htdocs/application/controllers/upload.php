@@ -171,6 +171,8 @@ class Upload extends CI_Controller {
 
 			$morphfile = upload_tulipa_input_file('morphfile', $upl_id);
 
+			$framesfile = upload_tulipa_input_file('framesfile', $upl_id);
+
 
 
 			if ($gramfile == '' or $tp_sent == ''){
@@ -214,6 +216,12 @@ class Upload extends CI_Controller {
 			if ($morphfile != '') {
 
 				$tp_command .= ' -m '.$morphfile;
+
+			}
+
+			if ($framesfile != '') {
+
+				$tp_command .= ' -f '.$framesfile;
 
 			}
 

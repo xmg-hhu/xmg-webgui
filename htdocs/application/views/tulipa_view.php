@@ -122,7 +122,15 @@
 	       
 	       
 	       <br>
+
+	       <label for="frames-upl">Frame grammar:</label>
 	       
+	       <input id="frames-upl" class="btn btn-primary filestyle" data-buttonBefore="true" type="file" data-buttonName="btn-primary" name="framesfile" size="20">
+	       
+	       
+	       
+	       <br>
+
 	       
 	       
 	       <label for="axiom">Axiom:</label>
