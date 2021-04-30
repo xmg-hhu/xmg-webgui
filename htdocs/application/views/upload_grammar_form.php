@@ -77,8 +77,9 @@
 	  </select>
 	</div>
 	Debug mode:<input type="checkbox" id='debug' name="debug">
-	</div>
+	</br>
 	Type hierarchy:<input type="checkbox" id='type_hierarchy' name="type_hierarchy">
+	</div>
 	<br/>
 	<br/>
 	

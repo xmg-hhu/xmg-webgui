@@ -239,7 +239,7 @@
 	    
 	  </script>
 	  <form
-	    action="index.php/upload/workbench?file=<?php echo($grammarfile) ?>&compiler=<?php  echo($compiler) ?>&debug=<?php  echo($debug) ?>"&type_hierarchy=<?php  echo($type_hierarchy) ?>" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="saveCompileForm">
+	    action="index.php/upload/workbench?file=<?php echo($grammarfile) ?>&compiler=<?php  echo($compiler) ?>&debug=<?php  echo($debug) ?>&type_hierarchy=<?php  echo($type_hierarchy) ?>" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="saveCompileForm">
 	    <textarea name="myEditorArea" rows="10" id="myEditorArea"></textarea>
 	  </form>
 	  <br/>
