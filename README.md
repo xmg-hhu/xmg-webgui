@@ -8,6 +8,7 @@ Directories to add (with adapted writing permissions):
 - htdocs/uploads
 - htdocs/tulipa/uploads
 - htdocs/tulipa/parseresults
+- xmg-ng (git clone https://github.com/spetitjean/XMG-2.git xmg-ng + install xmg)
 
 To adapt all links for a local version:
 - in htdocs/config/config.php, adapt the line:
