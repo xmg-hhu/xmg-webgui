@@ -38,6 +38,12 @@
       $debug = $debug_val;
       }
 
+      if (isset($_GET['type_hierarchy'])) {
+      $type_hierarchy=$_GET['type_hierarchy'];
+      }
+      else {
+      $type_hierarchy = $type_hierarchy_val;
+      }
       
       if (isset($_GET['line'])) {
       $line=$_GET['line'];
@@ -55,6 +61,7 @@
       var upload_folder = "uploads/";
       var compiler = '<?php echo($compiler) ?>';
       var debug = '<?php echo($debug) ?>';
+      var type_hierarchy = '<?php echo($type_hierarchy) ?>';
       var line = '<?php echo($line) ?>';
     </script>
     
@@ -153,6 +160,8 @@
 	    <br/>
 	    Debug mode:<input type="checkbox" id='debug_' name="debug_">
 	    <br/>
+	    Type hierarchy:<input type="checkbox" id='type_hierarchy_' name="type_hierarchy_">
+	    <br/>
 	  </form>
 	  <p></p>
 	  <br />
@@ -230,7 +239,7 @@
 	    
 	  </script>
 	  <form
-	    action="index.php/upload/workbench?file=<?php echo($grammarfile) ?>&compiler=<?php  echo($compiler) ?>&debug=<?php  echo($debug) ?>" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="saveCompileForm">
+	    action="index.php/upload/workbench?file=<?php echo($grammarfile) ?>&compiler=<?php  echo($compiler) ?>&debug=<?php  echo($debug) ?>"&type_hierarchy=<?php  echo($type_hierarchy) ?>" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="saveCompileForm">
 	    <textarea name="myEditorArea" rows="10" id="myEditorArea"></textarea>
 	  </form>
 	  <br/>
@@ -243,7 +252,7 @@
 	    });
 	  </script>
 	  <textarea class="form-control" rows="10" id="logs" style="height:auto; min-height:200px; resize:both;">
-	    <?php $output = shell_exec('/var/www/xmg.phil.hhu.de/htdocs/xmg-ng/xmg compile '.$compiler.' /var/www/xmg.phil.hhu.de/htdocs/uploads/'.basename($grammarfile).' '.$debug.' --force 2>&1');
+	    <?php $output = shell_exec('/var/www/xmg.phil.hhu.de/htdocs/xmg-ng/xmg compile '.$compiler.' /var/www/xmg.phil.hhu.de/htdocs/uploads/'.basename($grammarfile).' '.$debug.' '.$type_hierarchy.' --force 2>&1');
 	    echo($output);
 	    echo('Compiler used: '.$compiler);
 	    ?>
@@ -275,6 +284,8 @@
       var action = "index.php/upload/workbench";
       var debug = document.getElementById('debug_');
       var debug_select = "";
+      var type_hierarchy = document.getElementById('type_hierarchy_');
+      var type_hierarchy_select = "";
       
       // handling the checkbox
       debug.addEventListener('change', (event) => {
@@ -284,15 +295,24 @@
         debug_select="";
       }
       })
+
+      // handling the checkbox
+      type_hierarchy.addEventListener('change', (event) => {
+      if (event.target.checked) {
+        type_hierarchy_select=" --more ";
+      } else {
+        type_hierarchy_select="";
+      }
+      })
  
       save_compile_button.onclick = function () {
-      var my_action = action + "?file=" + uploaded_file_name + "&compiler=" + compiler + "&debug=" + debug_select + "&line=" + line;
+      var my_action = action + "?file=" + uploaded_file_name + "&compiler=" + compiler + "&debug=" + debug_select + "&type_hierarchy=" + type_hierarchy_select + "&line=" + line;
       save_compile_form.setAttribute("action", my_action);
       };
       
       compiler_select.onchange = function() {
       compiler = this.value;
-      var my_action = action + "?file=" + uploaded_file_name + "&compiler=" + compiler + "&debug=" + debug_select + "&line=" + line;
+      var my_action = action + "?file=" + uploaded_file_name + "&compiler=" + compiler + "&debug=" + debug_select + "&type_hierarchy=" + type_hierarchy_select + "&line=" + line;
       save_compile_form.setAttribute("action", my_action);
       };
 

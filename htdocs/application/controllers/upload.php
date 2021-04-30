@@ -2,7 +2,7 @@
 
 class Upload extends CI_Controller {
 
-		//Display URL path
+    //Display URL path
     function __construct() {
         parent::__construct();
         $this->load->helper(array('form', 'url'));
@@ -317,6 +317,12 @@ class Upload extends CI_Controller {
 										else{
 										    $data['debug_val'] = '' ;
 										}
+										if ($this->input->post('type_hierarchy')){
+										    $data['type_hierarchy_val'] = ' --more ' ;
+										}
+										else{
+										    $data['type_hierarchy_val'] = '' ;
+										}
 										$this->load->view('workbench_view', $data);
 								}
 						}
@@ -332,6 +338,7 @@ class Upload extends CI_Controller {
 								$data = array('upload_data' => $this->upload->data());
 								$data['compiler_name'] = "synframe";
 								$data['debug_val'] = false;
+								$data['type_hierarchy_val'] = false;
 								
 								$this->load->view('workbench_view', $data);
 						}

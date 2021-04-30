@@ -61,9 +61,9 @@
 	The original XMG website can be found <a href="https://sourcesup.renater.fr/xmg">here</a>. The latest version, <a href="https://github.com/spetitjean/XMG-2">XMG-2</a>, and its <a href="https://github.com/spetitjean/XMG-2/wiki">documentation</a>, are available on GitHub.
 	
 	<h2>Aim of the XMG WebGUI</h2>
-	The XMG WebGUI makes available a compiler and viewer for XMG. No local installation of the XMG software is necessary. Just upload your code and let our server do the job.
+	The XMG WebGUI provides a compiler and viewer for XMG. No local installation of the XMG software is necessary. Just upload your code and let our server do the job. The generated resources can then be processed by the online parser.
 	<br/><br/>
-	The XMG WebGUI is also intended to make accessible already completed grammars in the XMG format. To begin with, we have converted the <a href="http://www.cis.upenn.edu/~xtag/">XTAG grammar</a> of English. Take a look <a href="index.php/upload/xtag">here</a>.
+	The XMG WebGUI also intends to share resources using the XMG format. To begin with, we have converted the <a href="http://www.cis.upenn.edu/~xtag/">XTAG grammar</a> of English. The result is visible <a href="index.php/upload/xtag">here</a>. A list of metagrammars developped with XMG is available <a href="index.php/upload/resources">here</a>.
 	
 	<h2>Team</h2>
 	<ul>
