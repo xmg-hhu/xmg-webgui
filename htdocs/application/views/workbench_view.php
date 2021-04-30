@@ -66,7 +66,8 @@
     </script>
     
     <!-- generate list of available compilers -->
-    <?php $output = shell_exec("ls /var/www/xmg.phil.hhu.de/htdocs/xmg-ng/.install/yap/xmg/compiler/ 2>&1"); ?>
+    <!-- <?php $output = shell_exec("ls /var/www/xmg.phil.hhu.de/htdocs/xmg-ng/.install/yap/xmg/compiler/ 2>&1"); ?> -->
+    <?php $output = shell_exec("ls xmg-ng/.install/yap/xmg/compiler/ 2>&1"); ?>
     <script type="text/javascript">
       $( document ).ready(function() {
       var a = <?php echo json_encode($output); ?>;
@@ -253,7 +254,7 @@
 	    });
 	  </script>
 	  <textarea class="form-control" rows="10" id="logs" style="height:auto; min-height:200px; resize:both;">
-	    <?php $output = shell_exec('/var/www/xmg.phil.hhu.de/htdocs/xmg-ng/xmg compile '.$compiler.' /var/www/xmg.phil.hhu.de/htdocs/uploads/'.basename($grammarfile).' '.$debug.' '.$type_hierarchy.' --force 2>&1');
+	    <?php $output = shell_exec('xmg-ng/xmg compile '.$compiler.' uploads/'.basename($grammarfile).' '.$debug.' '.$type_hierarchy.' --force 2>&1');
 	    echo($output);
 	    echo('Compiler used: '.$compiler);
 	    ?>

@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
     
     <!-- generate list of available compilers -->
-    <?php $output = shell_exec("ls /var/www/xmg.phil.hhu.de/htdocs/xmg-ng/.install/yap/xmg/compiler/ 2>&1"); ?>
+    <?php $output = shell_exec("ls xmg-ng/.install/yap/xmg/compiler/ 2>&1"); ?>
     <script type="text/javascript">
       $( document ).ready(function() {
       var a = <?php echo json_encode($output); ?>;
