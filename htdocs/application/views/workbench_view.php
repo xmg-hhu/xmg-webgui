@@ -167,7 +167,7 @@
 	  <br />
 	  
 	  <?php echo('<a target="_blank" href="uploads/'.basename($grammarfile,'.'.pathinfo($grammarfile)['extension']).'.xml " class="btn btn-success" download="'.preg_replace("/^.*\..*\..*\..*_/","",basename($grammarfile,'.'.pathinfo($grammarfile)['extension'])).'.xml" role="button"><span class="glyphicon glyphicon-download-alt"></span> Download XML </a>');?>
-	  <?php echo('<a target="_blank" href="uploads/'.basename($grammarfile,'.'.pathinfo($grammarfile)['extension']).'_more.mac " class="btn btn-success" download="'.preg_replace("/^.*\..*\..*\..*_/","",basename($grammarfile,'.'.pathinfo($grammarfile)['extension'])).'_more.mac" role="button"><span class="glyphicon glyphicon-download-alt"></span> Download XML </a>');?>
+	  <?php echo('<a target="_blank" href="uploads/'.basename($grammarfile,'.'.pathinfo($grammarfile)['extension']).'_more.mac " class="btn btn-success" download="'.preg_replace("/^.*\..*\..*\..*_/","",basename($grammarfile,'.'.pathinfo($grammarfile)['extension'])).'_more.mac" role="button"><span class="glyphicon glyphicon-download-alt"></span> Download Type Hierarchy </a>');?>
 	  <?php echo('<a target="_blank" href="index.php/upload/viewer?file='.basename($grammarfile,'.'.pathinfo($grammarfile)['extension']).'.xml" class="btn btn-success" role="button"><span class="glyphicon glyphicon-eye-open"></span> View </a>');?>
 	  
 	  <p></p>
