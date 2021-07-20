@@ -60,7 +60,6 @@ class Upload extends CI_Controller {
 
 
 		function tulipa(){
-
 			$this->load->view('tulipa_view', array('error' => ' '));
 
 		}
@@ -76,7 +75,6 @@ class Upload extends CI_Controller {
 				return;
 
 			}
-
 					
 
 		function upload_tulipa_input_file($file_id_name, $upl_id=''){
@@ -165,7 +163,7 @@ class Upload extends CI_Controller {
 
 			// $framefile = upload_tulipa_input_file('framfile', $upl_id);
 
-			// $tyhifile = upload_tulipa_input_file('tyhifile', $upl_id);
+			$tyhifile = upload_tulipa_input_file('tyhifile', $upl_id);
 
 			$lemfile = upload_tulipa_input_file('lemfile', $upl_id);
 
@@ -195,17 +193,6 @@ class Upload extends CI_Controller {
 
 			}
 
-			// if ($framefile != ''){
-
-			// 	$tp_command .= ' -f '.$framefile;
-
-			// }
-
-			// if ($tyhifile != ''){
-
-			// 	$tp_command .= ' -th '.$tyhifile;
-
-			// }
 
 			if ($lemfile != '') {
 
@@ -224,6 +211,14 @@ class Upload extends CI_Controller {
 				$tp_command .= ' -f '.$framesfile;
 
 			}
+
+
+			 if ($tyhifile != ''){
+
+			     	$tp_command .= ' -th '.$tyhifile;
+
+			}
+
 
 			if ($tp_axiom != ''){
 

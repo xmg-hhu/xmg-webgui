@@ -81,26 +81,6 @@
 
 	  <br>
 
-
-
-	  <!-- <label for="fram-upl">Frames:</label>
-
-	       <input id="fram-upl" class="btn btn-primary filestyle" data-buttonBefore="true" type="file" data-buttonName="btn-primary" name="framfile" size="20">
-
-
-
-	       <br>
-
-
-	       
-	       <label for="tyhi-upl">Type hierarchy:</label>
-	       
-	       <input id="tyhi-upl" class="btn btn-primary filestyle" data-buttonBefore="true" type="file" data-buttonName="btn-primary" name="tyhifile" size="20"> -->
-
-	       
-	       
-	       <!-- <br> -->
-	       
 	       
 	       
 	       <label for="lem-upl">Lemmas:</label>
@@ -129,6 +109,14 @@
 	       
 	       <br>
 
+	       
+	       <label for="tyhi-upl">Type hierarchy:</label>
+	       
+	       <input id="tyhi-upl" class="btn btn-primary filestyle" data-buttonBefore="true" type="file" data-buttonName="btn-primary" name="tyhifile" size="20"> 
+	       
+	       
+	       <br>
+	       
 	       
 	       
 	       <label for="axiom">Axiom:</label>
