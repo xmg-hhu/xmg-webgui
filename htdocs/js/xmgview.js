@@ -1490,6 +1490,27 @@ function pressedButtonGraph (evt) {
     var graphButton = object.parentNode.getElementById("buttonGraph");
     toggleButtonDisplay(graphButton);
     displayGraph(object);
+    var StringIndent = "\t";
+
+    $.ajax({
+	method: "POST",
+	url: "js/graph_exec.php",
+	data: { text: graphFrame(object,StringIndent) }
+    })
+	.done(function( response ) {
+	    console.log(response);
+	    //document.getElementsByTagName("svg")[0].innerHTML = response;
+	    console.log(document.querySelector("[id=semFrameSVG]"));
+	    //document.querySelector("[id=semFrameSVG]").innerHTML = response;
+	    console.log(document.getElementsByTagName("svg"));
+	    var parser = new DOMParser();
+	    var doc_graph = parser.parseFromString(response, "image/svg+xml");
+	    var serializer = new XMLSerializer();
+	    var blob = new Blob([serializer.serializeToString(doc_graph)],{type:"image/svg+xml"});
+	    saveAs(blob, entryName+".svg");
+	});
+
+    console.log('jslog');
 }
 
 function displayGraph (object) {
