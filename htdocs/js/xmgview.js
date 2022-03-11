@@ -1494,7 +1494,6 @@ function pressedButtonGraph (evt) {
     var StringIndent = "\t";
 
     if (graphButton.getAttribute("status") == "pressed" ) {
-
 	$.ajax({
 	    method: "POST",
 	    url: "application/controllers/graph_exec.php",
@@ -1517,13 +1516,16 @@ function pressedButtonGraph (evt) {
 		    //addLabel(allNodes[i].childNodes[5].lastChild.data,allNodes[i].childNodes[5]);
 
 		    // remove the square brackets
-		    addLabel(allNodes[i].childNodes[1].lastChild.data.replace('[','').replace(']',''),allNodes[i]);
+
+		    if (allNodes[i].childNodes[1].lastChild.data.startsWith('[')){
+			addLabel(allNodes[i].childNodes[1].lastChild.data.replace('[','').replace(']',''),allNodes[i]);
 		    
-		    //addLabel("V3",allNodes[i]);
-		    label = allNodes[i].lastChild; 
-		    label.setAttribute("y",allNodes[i].childNodes[3].getAttribute('cy'));
-		    label.setAttribute("x",allNodes[i].childNodes[3].getAttribute('cx')-0.5*label.getBBox().width);
-		    label.lastChild.setAttribute("stroke-width","0");
+			//addLabel("V3",allNodes[i]);
+			label = allNodes[i].lastChild; 
+			label.setAttribute("y",allNodes[i].childNodes[3].getAttribute('cy'));
+			label.setAttribute("x",allNodes[i].childNodes[3].getAttribute('cx')-0.5*label.getBBox().width);
+			label.lastChild.setAttribute("stroke-width","0");
+		    }
 		}		
 
 		
@@ -1844,13 +1846,13 @@ function graphFS (fs, indent){
 			valueString = value.children[j].innerHTML;
 		    }
 		    if (value.children[j].getAttribute("type") == "label") {
-			labelString = "[" +  value.children[j].getElementsByTagName("text")[0].innerHTML +"]"; 
+			labelString = "\""+ "[" +  value.children[j].getElementsByTagName("text")[0].innerHTML +"]" + "\""; 
 		    }
 		    if (value.children[j].getAttribute("type") == "fs") {
 			String += graphFS(value.children[j], indent);
 		    }
 		}
-		String += "\""+CurrentNode+ "\"" + "->" +  "\""+ labelString + "\"" + valueString + " [ label= \" " + Attribute + "\"] ;\n";
+		String += "\""+CurrentNode+ "\"" + "->" +  labelString + valueString + " [ label= \" " + Attribute + "\"] ;\n";
 	    }
 	}
     }
