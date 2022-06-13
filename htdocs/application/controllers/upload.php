@@ -78,13 +78,12 @@ class Upload extends CI_Controller {
 					
 
 		function upload_tulipa_input_file($file_id_name, $upl_id=''){
-
 			if (!is_uploaded_file($_FILES[$file_id_name]['tmp_name'])){
-
-				// echo "not exists: " . $file_id_name . "<br>";
-
+				//echo "not exists: " . $file_id_name . "<br>";
+				if ($file_id_name=='tyhifile'){
+				  echo "Type hierarchy was not uploaded (file too large)";
+				}				
 				return '';
-
 			}
 
 			$upl_dir = 'tulipa/uploads/';
@@ -99,15 +98,42 @@ class Upload extends CI_Controller {
 
 			if ($upl_file_type != "xml" && $upl_file_type != "mac") {
 
-				echo "sorry, I need an xml or mac file!";
-
+				//echo "sorry, I need an xml or mac file!";
 				$upl_ok = 0;
 
 			}
 
-			if ($_FILES['gramfile']['size'] > 1000000){
+			if ($file_id_name=='gramfile' and $_FILES['gramfile']['size'] > 1000000){
 
-				echo "sorry, file is too large";
+				echo "Grammar was not uploaded (file too large)";
+
+				$upl_ok = 0;
+
+			}
+			if ($file_id_name=='tyhifile' and $_FILES['tyhifile']['size']  > 1000000){
+
+				echo "Type hierarchy was not uploaded (file too large)";
+
+				$upl_ok = 0;
+
+			}
+			if ($file_id_name=='morphfile' and $_FILES['morphfile']['size'] > 1000000){
+
+				echo "Morph lexicon was not uploaded (file too large)";
+
+				$upl_ok = 0;
+
+			}
+			if ($file_id_name=='lemfile' and $_FILES['lemfile']['size'] > 1000000){
+
+				echo "Lemma lexicon was not uploaded (file too large)";
+
+				$upl_ok = 0;
+
+			}
+			if ($file_id_name=='framesfile' and $_FILES['framesfile']['size'] > 1000000){
+
+				echo "Frame grammar was not uploaded (file too large)";
 
 				$upl_ok = 0;
 
