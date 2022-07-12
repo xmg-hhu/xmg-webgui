@@ -51,7 +51,8 @@
       else {
       $line = 0;
       }
-      
+
+
       ?>
     
     
@@ -254,9 +255,10 @@
 	    });
 	  </script>
 	  <textarea class="form-control" rows="10" id="logs" style="height:auto; min-height:200px; resize:both;">
-	    <?php $output = shell_exec('xmg-ng/xmg compile '.$compiler.' uploads/'.basename($grammarfile).' '.$debug.' '.$type_hierarchy.' --force 2>&1');
-	    echo($output);
-	    echo('Compiler used: '.$compiler);
+	    <?php
+	     $output = shell_exec('timeout -k 15 20 xmg-ng/xmg compile '.$compiler.' uploads/'.basename($grammarfile).' '.$debug.' '.$type_hierarchy.' --force 2>&1');
+	     echo($output);
+	     echo('Compiler used: '.$compiler);
 	    ?>
 	  </textarea>
 	  <br/><br/>
