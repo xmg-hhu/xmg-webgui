@@ -9,7 +9,7 @@
 
     <base href="<?php echo base_url(); ?>" /> 
 
-    <!-- <base href="http://xmg.phil.hhu.de/"/> -->
+    <!-- <base href="https://xmg.phil.hhu.de/"/> -->
 
 
 

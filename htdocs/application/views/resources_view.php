@@ -5,7 +5,7 @@
     <title>Resources | XMG WebGUI</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <base href="<?php echo base_url(); ?>" />
-    <!-- <base href="http://xmg.phil.hhu.de/"/> -->
+    <!-- <base href="https://xmg.phil.hhu.de/"/> -->
     
     <script src="js/d3.v3.min.js"></script> <!-- needed by script.js --> 
     <script src="xtag/js/script.js"></script> <!-- connects data and viewer -->
@@ -87,7 +87,7 @@
 	  <li><a href="https://github.com/Bonhammer/depictive_grammar">Depictive grammar</a>: an LTAG grammar fragment with semantic frames for English depictives, by Benjamin Burkhardt.</li>
 	  <li><a href="https://raw.githubusercontent.com/spetitjean/XMG-2/master/MetaGrammars/synframe/polysemy/al.mg">Al</a>: a description of derivational polysemy with the suffix -al on verbs of change of possession, by Marios Andreou and Simon Petitjean (see the article <a href="http://taln2017.cnrs.fr/wp-content/uploads/2017/06/actes_TALN_2017-vol2.pdf#page=106">here</a>).</li>
 	  <li><a href="https://raw.githubusercontent.com/spetitjean/XMG-2/master/MetaGrammars/synframe/frame-constraints.mg">frame-constraints</a>: a set of frame constraints defining a type hierarchy for selected event types, by Laura Kallmeyer.</li>
-	  <li><a href="https://gitlab.com/agata.savary/mwe-xmg/">FrenchTAG + MWE</a>: a FrenchTAG grammar updated with a number of Multi Word Expressions, by Agata Savary (<a href="http://xmg.phil.hhu.de/uploads/FrenchTAG+MWE.pdf">draft of an accompanying paper</a>)</li>
+	  <li><a href="https://gitlab.com/agata.savary/mwe-xmg/">FrenchTAG + MWE</a>: a FrenchTAG grammar updated with a number of Multi Word Expressions, by Agata Savary (<a href="https://xmg.phil.hhu.de/uploads/FrenchTAG+MWE.pdf">draft of an accompanying paper</a>)</li>
 	</ul>
 	<br/>
 	<h4>Compiler lpframe - Morphological descriptions and frame semantics</h4>

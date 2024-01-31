@@ -5,7 +5,7 @@
     <title>Grammar upload | XMG WebGUI</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	 <base href="<?php echo base_url(); ?>" /> 
-	 <!-- <base href="http://xmg.phil.hhu.de/"/> -->
+	 <!-- <base href="https://xmg.phil.hhu.de/"/> -->
 	 
 	 <script src="js/d3.v3.min.js"></script>
 	 <script src="js/script.js"></script>

@@ -27,8 +27,8 @@
  * @author		EllisLab Dev Team
  * @link		http://codeigniter.com/user_guide/libraries/uri.html
  */
+#[\AllowDynamicProperties]
 class CI_URI {
-
 	/**
 	 * List of cached uri segments
 	 *

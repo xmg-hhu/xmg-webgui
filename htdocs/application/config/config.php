@@ -23,7 +23,7 @@
 |
 */
 //$config['base_url'] = 'http://xmg_webgui';
-$config['base_url'] = 'http://xmg.phil.hhu.de';
+$config['base_url'] = 'https://xmg.phil.hhu.de';
 
 /*
 |--------------------------------------------------------------------------
