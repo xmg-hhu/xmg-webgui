@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %}
+<?php include 'navbar_simple.php'; ?>
+<?php include 'navbar.php'; ?>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<html>
+  <head>
+    <title>Grammar upload | XMG WebGUI</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <html>
+   <body>
+      <form action = "save_and_view" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" class="form-control" name = "file" />
+        <button type = "submit" class="btn btn-primary" >Upload</button>
+      </form>
+</form>
+</form>
+   </body>
+</html>
+  </body>
+</html>
+{% endblock %}
