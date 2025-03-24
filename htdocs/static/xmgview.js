@@ -1338,31 +1338,53 @@ function pressedButtonExportSVG (evt) {
 		exportSVG(object)
 }
 
-
-function exportSVG (object) {
+function exportSVG(object) {
     var clone = object.cloneNode(true);
-    //console.log(clone);
-    // clean-up SVG: remove ce-switch and onclick-stuff
+
+    // Remove ce-switch elements and onclick attributes
     var svgElements = clone.getElementsByTagName("svg");
-    for (var i = 0; i<svgElements.length; i++) {
-	if (svgElements[i].getAttribute("type") == "ce-switch") {
-	    svgElements[i].parentNode.removeChild(svgElements[i]);
-	}
+    for (var i = 0; i < svgElements.length; i++) {
+        if (svgElements[i].getAttribute("type") == "ce-switch") {
+            svgElements[i].parentNode.removeChild(svgElements[i]);
+        }
     }
+
     var rectElements = clone.getElementsByTagName("rect");
-    for (var i = 0; i< rectElements.length; i++) {
-	if (rectElements[i].hasAttribute("onclick")) {
-	    rectElements[i].removeAttribute("onclick");
-	}
-	if (rectElements[i].hasAttribute("cursor")) {
-	    rectElements[i].removeAttribute("cursor");
-				}
+    for (var i = 0; i < rectElements.length; i++) {
+        if (rectElements[i].hasAttribute("onclick")) {
+            rectElements[i].removeAttribute("onclick");
+        }
+        if (rectElements[i].hasAttribute("cursor")) {
+            rectElements[i].removeAttribute("cursor");
+        }
     }
-    
+
+    // Ensure full SVG is captured:
+    var svg = clone.tagName.toLowerCase() === 'svg' ? clone : clone.querySelector("svg");
+
+    if (svg) {
+        // Temporarily add the cloned SVG to the DOM to get dimensions
+        document.body.appendChild(svg);
+        
+        // Get the bounding box of the full content
+        var bbox = svg.getBBox(); 
+        
+        // Remove it from the DOM again
+        document.body.removeChild(svg);
+        
+        // Ensure the viewBox covers the entire SVG
+        svg.setAttribute("viewBox", `${bbox.x} ${bbox.y} ${bbox.width} ${bbox.height}`);
+
+        // Remove fixed width/height to make it responsive
+        svg.removeAttribute("width");
+        svg.removeAttribute("height");
+    }
+
     var serializer = new XMLSerializer();
-    var blob = new Blob([serializer.serializeToString(clone)],{type:"image/svg+xml"});
-    saveAs(blob, entryName+".svg");
+    var blob = new Blob([serializer.serializeToString(clone)], { type: "image/svg+xml" });
+    saveAs(blob, entryName + ".svg");
 }
+
 
 function pressedButtonCollapseAll (evt) {
 		var object;
