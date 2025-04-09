@@ -48,3 +48,9 @@ def viewer(file_path, file_content):
 @app.route('/css/<path:filename>')
 def serve_css(filename):
     return send_from_directory(os.path.join(app.root_path, 'css'), filename)
+
+@app.route('/graph_exec', methods = ['POST', 'GET'])
+def graph_exec():
+    dot_input = request.form.get('text')
+    svg_output = graphviz.Source(dot_input, format='svg').pipe()
+    return svg_output
